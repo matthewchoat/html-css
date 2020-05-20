@@ -40,6 +40,9 @@ h3 {
     background-image: linear-gradient(-225deg, limegreen 25%, indigo 100%);
     padding: 15px;
     border-radius: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
 }
 
 h4 {
@@ -93,6 +96,9 @@ li.discgolf {
     Padding: 15px;
     border-radius: 45px;
     background-image: linear-gradient(-225deg, limegreen 25%, indigo 100%);
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .me {
@@ -104,7 +110,15 @@ li.discgolf {
 }
 
 .about {
-    width: 600px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 45px;
+}
+
+.gallery {
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -112,7 +126,7 @@ li.discgolf {
 }
 
 .flexcontainer {
-    width: 85%;
+    width: 90%;
     height: 720px;
     overflow-y: scroll;
     overflow-x: hidden;
