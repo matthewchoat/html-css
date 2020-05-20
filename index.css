@@ -1,0 +1,375 @@
+@import "compass/css3";
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    background: url(assets/leaf-splash.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+p {
+    text-align: center;
+}
+
+h1 {
+    color: #f9ffe8;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #f9ffe8;
+    font-style: italic;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+h3 {
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 100px;
+    color: white;
+    background-image: linear-gradient(-225deg, limegreen 25%, indigo 100%);
+    padding: 15px;
+    border-radius: 45px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 24px;
+}
+
+li {
+    height: 25px;
+    color: #f9ffe8;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+li.music {
+    list-style-image: url(assets/note.png);
+    padding-bottom: 20px;
+}
+
+li.guitar {
+    list-style-image: url(assets/guitar.png);
+    padding-bottom: 20px;
+}
+
+li.games {
+    list-style-image: url(assets/game.png);
+    padding-bottom: 20px;
+}
+
+li.longboard {
+    list-style-image: url(assets/longboard.png);
+    padding-bottom: 20px;
+}
+
+li.discgolf {
+    list-style-image: url(assets/discgolf.png);
+    padding-bottom: 20px;
+}
+
+.bio {
+    color: #f9ffe8;
+    font-size: 14px;
+    text-align: center;
+}
+
+.gall {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    Padding: 15px;
+    border-radius: 45px;
+    background-image: linear-gradient(-225deg, limegreen 25%, indigo 100%);
+}
+
+.me {
+    height: 150px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: limegreen;
+    margin-top: 40px;
+}
+
+.about {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 45px;
+}
+
+.flexcontainer {
+    width: 85%;
+    height: 720px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-image: linear-gradient(-225deg, limegreen 25%, indigo 100%);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding: 15px;
+    border-radius: 45px;
+}
+
+.caption {
+    width: 25%;
+    height: 340px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+.grey {
+    height: 3px;
+    background-color: #d8d8d8;
+    border: none;
+    width: 50px;
+}
+
+.about-container {
+    background: url(assets/leaf-splash.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 950px;
+}
+
+hr.yellow {
+    height: 6px;
+    border: 0;
+    border-bottom: none;
+    border-right: none;
+}
+
+.box {
+    float: left;
+    width: 42.5%;
+    margin-left: 5%;
+    margin-top: 80px;
+    background-image: linear-gradient(-225deg, limegreen 25%, indigo 100%);
+    border-radius: 45px;
+    color: white;
+}
+
+.clear {
+    clear: both;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.skills-and-tools {
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+.skills-tools {
+    background-color: white;
+}
+
+.icons {
+    text-align: center;
+}
+
+.icon {
+    margin: 30px 0;
+}
+
+.contact-me {
+    height: 550px;
+    background-color: #202020;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    padding-top: 30px;
+}
+
+.contact-headline {
+    color: white;
+}
+
+.contact-info {
+    color: white;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+.contact-link {
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.body-link {
+    color: indigo;
+    text-decoration: none;
+}
+
+.bio-link {
+    color: limegreen;
+    text-decoration: none;
+}
+
+.header {
+    overflow: hidden;
+    background-image: linear-gradient(-225deg, limegreen 25%, indigo 100%);
+}
+
+.header a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.header a:hover {
+    background-color: indigo;
+    color: white;
+}
+
+.header a.active {
+    background-color: #5E596E;
+    color: white;
+}
+
+.header .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .header a:not(:first-child) {
+        display: none;
+    }
+    .header a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header.responsive {
+        position: relative;
+    }
+    .header.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .header.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.sticky+.content {
+    padding-top: 102px;
+}
+
+*,
+*:before,
+*:after {
+    @include box-sizing(border-box);
+}
+
+form {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto;
+    background-image: linear-gradient(-225deg, limegreen 25%, indigo 100%);
+    padding: 15px;
+    border-radius: 45px;
+    input,
+    textarea {
+        border: 0;
+        outline: 0;
+        padding: 1em;
+        @include border-radius(8px);
+        display: block;
+        width: 100%;
+        margin-top: 1em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        @include box-shadow(0 1px 1px rgba(black, 0.1));
+        resize: none;
+        &:focus {
+            @include box-shadow(0 0px 2px rgba($red, 1)!important);
+        }
+    }
+    #input-submit {
+        color: white;
+        background: indigo;
+        cursor: pointer;
+        &:hover {
+            @include box-shadow(0 1px 1px 1px rgba(#aaa, 0.6));
+        }
+    }
+    textarea {
+        height: 126px;
+    }
+}
+
+.half {
+    float: left;
+    width: 48%;
+    margin-bottom: 1em;
+}
+
+.right {
+    width: 50%;
+}
+
+.left {
+    margin-right: 2%;
+}
+
+@media (max-width: 480px) {
+    .half {
+        width: 100%;
+        float: none;
+        margin-bottom: 0;
+    }
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}

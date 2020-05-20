@@ -1,11 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bio Page</title>
+    <link rel="stylesheet" type="text/css" href="index.css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
+    <title>Matthew Choat - Bio</title>
+    <meta name="description" content="Matthew Choat is a professional
+            software engineer and specializing in full stack development.
+            He has extensive experience with HTML/CSS, JavaScript, Node.js, React, and Java">
 </head>
+
 <body>
-    
+    <nav>
+        <div class="header" id="myHeader">
+            <a href="index.html" class="active">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "header") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "header";
+                    }
+                }
+            </script>
+            <script>
+                window.onscroll = function() {
+                    stickyFunction()
+                }
+
+                ;
+                var header = document.getElementById("myHeader");
+                var sticky = header.offsetTop;
+
+                function stickyFunction() {
+                    if (window.pageYOffset > sticky) {
+                        header.classList.add("sticky");
+                    } else {
+                        header.classList.remove("sticky");
+                    }
+                }
+            </script>
+        </div>
+    </nav>
+    <div class="about-container">
+        <div class="about">
+            <img src="assets/me.png" class="me" alt="Matthew Choat" />
+
+            <h1>Matthew Choat</h1>
+
+            <h2>Full Stack Developer</h2>
+            <hr class="grey" />
+            <article>
+                <p class="bio">
+                    Matthew is a full stack developer and documentation specialist with over nine years of proven experience in the software industry. He has a strong background in software documentation, web design, and apps support.</p>
+                <p class="bio"> With his professional and technical communication skills, Matthew looks forward to leading Agile development teams that can devise and execute creative solutions under strict deadlines. Matthew is a life-long learner and is constantly
+                    studying and practicing new technologies to remain competitive in the ever-evolving software industry.</p>
+                <p class="bio">
+                    Matthew is currently attending a <em>"Full Stack Development Bootcamp"</em> at <strong><a href= "http://www.teksystems.com" class="bio-link" target=blank>TEKsystems</a></strong>. He is studying advanced web development using JavaScript,
+                    Node.js, and React as well as application engineering using Java. After graduation, he plans to use his new skill set to develop applications full-time at TEKsystems.
+                </p>
+            </article>
+            <br />
+            <br />
+            <p class="gall">
+                Matthew's favorite hobbies when he's not coding include the following:
+                <ul>
+                    <li class=music>Writing and recording music</li>
+                    <li class=guitar>Playing Guitar and Acting at Musical Theaters in the DFW metroplex</li>
+                    <li class=games>Playing computer games and Nintendo Switch</li>
+                    <li class=longboard>Longboarding around urban environments</li>
+                    <li class=discgolf>Playing Disc Golf at local parks</li>
+                </ul>
+            </p>
+        </div>
+    </div>
 </body>
-</html>
+</html
