@@ -15,8 +15,8 @@ p {
 
 h1 {
     color: #f9ffe8;
-    font-size: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3.5em;
+    font-family: 'El Messiri', sans-serif;
     font-weight: normal;
     margin-bottom: 0;
 }
@@ -24,17 +24,16 @@ h1 {
 h2 {
     color: #f9ffe8;
     font-style: italic;
-    font-size: 18px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    font-family: 'El Messiri', sans-serif;
     font-weight: normal;
     margin-top: 0;
 }
 
 h3 {
     text-align: center;
-    font-size: 38px;
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5em;
+    font-family: 'El Messiri', sans-serif;
     margin-top: 100px;
     color: white;
     background-image: linear-gradient(-225deg, limegreen 25%, indigo 100%);
@@ -42,20 +41,21 @@ h3 {
     border-radius: 45px;
     margin-left: auto;
     margin-right: auto;
-    width: 45%;
+    width: 55%;
 }
 
 h4 {
     text-align: center;
-    font-size: 24px;
+    font-size: 2em;
+    font-family: 'El Messiri', sans-serif;
 }
 
 li {
-    height: 25px;
+    height: auto;
     color: #f9ffe8;
     text-align: left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 14px;
+    font-size: 1em;
 }
 
 li.music {
@@ -83,20 +83,25 @@ li.discgolf {
     padding-bottom: 20px;
 }
 
+li.yoga {
+    list-style-image: url(assets/yoga.png);
+    padding-bottom: 20px;
+}
+
 .bio {
     color: #f9ffe8;
-    font-size: 14px;
+    font-size: 1em;
     text-align: center;
 }
 
 .gall {
     color: white;
-    font-size: 14px;
+    font-size: 1em;
     text-align: center;
     Padding: 15px;
     border-radius: 45px;
     background-image: linear-gradient(-225deg, limegreen 25%, indigo 100%);
-    width: 45%;
+    width: 55%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -143,11 +148,14 @@ li.discgolf {
 
 .caption {
     width: 25%;
-    height: 340px;
+    height: auto;
     padding: 10px;
+    margin: 10px;
     text-align: center;
     color: white;
-    font-size: 14px;
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .grey {
@@ -163,7 +171,7 @@ li.discgolf {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 950px;
+    height: 100%;
 }
 
 hr.yellow {
@@ -183,29 +191,17 @@ hr.yellow {
     color: white;
 }
 
+.responsive {
+    width: 90%;
+    height: auto;
+}
+
 .clear {
     clear: both;
 }
 
 .full-width {
     width: 100%;
-}
-
-.skills-and-tools {
-    max-width: 400px;
-    margin: 40px auto;
-}
-
-.skills-tools {
-    background-color: white;
-}
-
-.icons {
-    text-align: center;
-}
-
-.icon {
-    margin: 30px 0;
 }
 
 .contact-me {
@@ -247,8 +243,11 @@ hr.yellow {
     text-decoration: none;
 }
 
+
+/* Sticky header css */
+
 .header {
-    overflow: hidden;
+    overflow: auto;
     background-image: linear-gradient(-225deg, limegreen 25%, indigo 100%);
 }
 
@@ -263,12 +262,12 @@ hr.yellow {
 }
 
 .header a:hover {
-    background-color: indigo;
+    background-color: #5E596E;
     color: white;
 }
 
 .header a.active {
-    background-color: #5E596E;
+    background-color: indigo;
     color: white;
 }
 
@@ -276,7 +275,7 @@ hr.yellow {
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
     .header a:not(:first-child) {
         display: none;
     }
@@ -286,7 +285,7 @@ hr.yellow {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
     .header.responsive {
         position: relative;
     }
@@ -312,78 +311,249 @@ hr.yellow {
     padding-top: 102px;
 }
 
-*,
-*:before,
-*:after {
-    @include box-sizing(border-box);
-}
+
+/*Contact form CSS*/
 
 form {
-    max-width: 600px;
-    text-align: center;
-    margin: 20px auto;
-    background-image: linear-gradient(-225deg, limegreen 25%, indigo 100%);
-    padding: 15px;
-    border-radius: 45px;
-    input,
-    textarea {
-        border: 0;
-        outline: 0;
-        padding: 1em;
-        @include border-radius(8px);
-        display: block;
-        width: 100%;
-        margin-top: 1em;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        @include box-shadow(0 1px 1px rgba(black, 0.1));
-        resize: none;
-        &:focus {
-            @include box-shadow(0 0px 2px rgba($red, 1)!important);
-        }
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    height: auto;
+    padding: 30px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    overflow: hidden;
+}
+
+textarea {
+    background: rgba(81, 26, 137, 0.45);
+    width: 100%;
+    height: 135px;
+    border: none;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    color: #fff;
+    padding-left: 45px;
+    padding-right: 20px;
+    padding-top: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+select {
+    width: 100%;
+    height: 48px;
+    line-height: 1.5;
+    font-size: 1.4em;
+    border: none;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -mox-border-radius: 25px;
+    color: #fff;
+    display: block;
+    background: transparent;
+    background-color: rgba(117, 79, 154, 0.52);
+    margin-bottom: 20px;
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.nameinput,
+.emailinput {
+    width: 894px;
+    height: 48px;
+    border: none;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 25px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+input[type=submit] {
+    cursor: pointer;
+}
+
+input.nameinput {
+    background: rgba(18, 190, 27, 0.52);
+    padding-left: 45px;
+}
+
+input.emailinput {
+    background: rgba(83, 130, 111, 0.52);
+    padding-left: 45px;
+}
+
+input.message {
+    background: rgba(0, 0, 0, 0.4);
+    padding-left: 45px;
+}
+
+select.indent {
+    padding-left: 45px;
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+:-moz-placeholder {
+    color: #fff;
+}
+
+::-moz-placeholder {
+    color: #fff;
+}
+
+:-ms-input-placeholder {
+    color: #fff;
+}
+
+input:focus,
+textarea:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 5px 1px rgba(255, 255, 255, .5);
+    -webkit-box-shadow: 0 0 5px 1px rgba(255, 255, 255, .5);
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, .5);
+    overflow: hidden;
+}
+
+.btn {
+    border: none;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1.4em;
+    width: 200px;
+    height: 48px;
+    color: indigo;
+    background: limegreen;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    position: relative;
+    outline: none;
+    box-shadow: 0 6px darkgreen;
+    border-radius: 5px;
+    float: right;
+    margin-right: 6px;
+}
+
+.btn:hover {
+    background: lightgreen;
+    outline: none;
+    box-shadow: 0 4px limegreen;
+    top: 2px;
+}
+
+.btn:active {
+    background: #fff;
+    outline: none;
+    box-shadow: 0 0 #cecece;
+    top: 6px;
+}
+
+.flat {
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.flat:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+}
+
+.flat {
+    width: 110% !important;
+    height: 48px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: url(http://www.jordancundiff.com/wp-content/uploads/2014/03/icon-dropdown.png) no-repeat right;
+}
+
+@media only screen and ( min-width: 768px) and ( max-width: 1035px) {
+    form {
+        width: 736px !important;
     }
-    #input-submit {
-        color: white;
-        background: indigo;
-        cursor: pointer;
-        &:hover {
-            @include box-shadow(0 1px 1px 1px rgba(#aaa, 0.6));
-        }
+    #wpcf7-f156-p143-o1\20 formwrap>form>p>span.wpcf7-form-control-wrap.Subject.flat>select,
+    #wpcf7-f156-p143-o1\20 formwrap>form>p>span.wpcf7-form-control-wrap.Subject.flat {
+        width: 731px !important;
     }
-    textarea {
-        height: 126px;
+    .nameinput,
+    .emailinput,
+    #wpcf7-f156-p143-o1\20 formwrap>form>p>span.wpcf7-form-control-wrap.Message>textarea {
+        width: 666px !important;
     }
 }
 
-.half {
-    float: left;
-    width: 48%;
-    margin-bottom: 1em;
-}
-
-.right {
-    width: 50%;
-}
-
-.left {
-    margin-right: 2%;
-}
-
-@media (max-width: 480px) {
-    .half {
-        width: 100%;
-        float: none;
-        margin-bottom: 0;
+@media only screen and ( max-width: 804px) {
+    h1 {
+        font-size: 50px;
+    }
+    form {
+        width: 450px !important;
+    }
+    #wpcf7-f156-p143-o1\20 formwrap>form>p>span.wpcf7-form-control-wrap.Subject.flat>select,
+    #wpcf7-f156-p143-o1\20 formwrap>form>p>span.wpcf7-form-control-wrap.Subject.flat {
+        width: 445px !important;
+    }
+    .nameinput,
+    .emailinput,
+    #wpcf7-f156-p143-o1\20 formwrap>form>p>span.wpcf7-form-control-wrap.Message>textarea {
+        width: 380px !important;
     }
 }
 
-.cf:before,
-.cf:after {
-    content: " ";
-    /* 1 */
-    display: table;
-    /* 2 */
-}
-
-.cf:after {
-    clear: both;
+@media only screen and ( max-width: 517px) {
+    h1 {
+        font-size: 30px;
+    }
+    form {
+        width: 295px !important;
+    }
+    #wpcf7-f156-p143-o1\20 formwrap>form>p>span.wpcf7-form-control-wrap.Subject.flat>select,
+    #wpcf7-f156-p143-o1\20 formwrap>form>p>span.wpcf7-form-control-wrap.Subject.flat {
+        width: 290px !important;
+    }
+    .nameinput,
+    .emailinput,
+    #wpcf7-f156-p143-o1\20 formwrap>form>p>span.wpcf7-form-control-wrap.Message>textarea {
+        width: 225px !important;
+    }
+    .btn {
+        width: 110px;
+    }
 }
