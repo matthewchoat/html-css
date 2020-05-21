@@ -132,9 +132,9 @@ li.yoga {
 
 .flexcontainer {
     width: 90%;
-    height: 720px;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: auto;
     background-image: linear-gradient(-225deg, limegreen 25%, indigo 100%);
     margin-left: auto;
     margin-right: auto;
