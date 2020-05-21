@@ -1,0 +1,434 @@
+@import "compass/css3";
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    background: url(assets/leaf-splash.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+p {
+    text-align: center;
+}
+
+h1 {
+    color: #f9ffe8;
+    font-size: 3.5em;
+    font-family: 'El Messiri', sans-serif;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #f9ffe8;
+    font-style: italic;
+    font-size: 1.5em;
+    font-family: 'El Messiri', sans-serif;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'El Messiri', sans-serif;
+    margin-top: 100px;
+    color: white;
+    background-image: linear-gradient(-225deg, limegreen 25%, indigo 100%);
+    padding: 15px;
+    border-radius: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+}
+
+h4 {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'El Messiri', sans-serif;
+}
+
+li {
+    height: auto;
+    color: #f9ffe8;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+}
+
+li.music {
+    list-style-image: url(assets/note.png);
+    padding-bottom: 20px;
+}
+
+li.guitar {
+    list-style-image: url(assets/guitar.png);
+    padding-bottom: 20px;
+}
+
+li.games {
+    list-style-image: url(assets/game.png);
+    padding-bottom: 20px;
+}
+
+li.longboard {
+    list-style-image: url(assets/longboard.png);
+    padding-bottom: 20px;
+}
+
+li.discgolf {
+    list-style-image: url(assets/discgolf.png);
+    padding-bottom: 20px;
+}
+
+li.yoga {
+    list-style-image: url(assets/yoga.png);
+    padding-bottom: 20px;
+}
+
+.bio {
+    color: #f9ffe8;
+    font-size: 1em;
+    text-align: center;
+}
+
+.gall {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    Padding: 15px;
+    border-radius: 45px;
+    background-image: linear-gradient(-225deg, limegreen 25%, indigo 100%);
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.me {
+    height: 150px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: limegreen;
+    margin-top: 40px;
+}
+
+.about {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 45px;
+}
+
+.gallery {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 45px;
+}
+
+.flexcontainer {
+    width: 90%;
+    height: 720px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-image: linear-gradient(-225deg, limegreen 25%, indigo 100%);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding: 15px;
+    border-radius: 45px;
+}
+
+.caption {
+    width: 25%;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grey {
+    height: 3px;
+    background-color: #d8d8d8;
+    border: none;
+    width: 50px;
+}
+
+.about-container {
+    background: url(assets/leaf-splash.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+
+hr.yellow {
+    height: 6px;
+    border: 0;
+    border-bottom: none;
+    border-right: none;
+}
+
+.box {
+    float: left;
+    width: 42.5%;
+    margin-left: 5%;
+    margin-top: 80px;
+    background-image: linear-gradient(-225deg, limegreen 25%, indigo 100%);
+    border-radius: 45px;
+    color: white;
+}
+
+.responsive {
+    width: 90%;
+    height: auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.contact-me {
+    height: 550px;
+    background-color: #202020;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    padding-top: 30px;
+}
+
+.contact-headline {
+    color: white;
+}
+
+.contact-info {
+    color: white;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+.contact-link {
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.body-link {
+    color: indigo;
+    text-decoration: none;
+}
+
+.bio-link {
+    color: limegreen;
+    text-decoration: none;
+}
+
+.header {
+    overflow: auto;
+    background-image: linear-gradient(-225deg, limegreen 25%, indigo 100%);
+}
+
+.header a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.header a:hover {
+    background-color: #5E596E;
+    color: white;
+}
+
+.header a.active {
+    background-color: indigo;
+    color: white;
+}
+
+.header .icon {
+    display: none;
+}
+
+@media screen and (max-width: 400px) {
+    .header a:not(:first-child) {
+        display: none;
+    }
+    .header a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header.responsive {
+        position: relative;
+    }
+    .header.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .header.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.sticky+.content {
+    padding-top: 102px;
+}
+
+
+/*contact form SCSS*/
+
+//import font from google
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
+//import compass
+@import "compass";
+//colors
+$primary-color: #FF512F;
+$secondary-color: #333;
+$form-bg: #fff;
+//contact form
+.contact-form {
+    margin-top: 30px;
+    .input-block {
+        background-color: rgba(white, .8);
+        border: solid 1px $primary-color;
+        width: 100%;
+        height: 60px;
+        padding: 25px;
+        position: relative;
+        margin-bottom: 20px;
+        @include transition(all 0.3s ease-out);
+        &.focus {
+            background-color: $form-bg;
+            border: solid 1px darken($primary-color, 10%);
+        }
+        &.textarea {
+            height: auto;
+            .form-control {
+                height: auto;
+                resize: none;
+            }
+        }
+        label {
+            position: absolute;
+            left: 25px;
+            top: 25px;
+            display: block;
+            margin: 0;
+            font-weight: 300;
+            z-index: 1;
+            color: $secondary-color;
+            font-size: 18px;
+            line-height: 10px;
+        }
+        .form-control {
+            background-color: transparent;
+            padding: 0;
+            border: none;
+            @include border-radius(0);
+            @include box-shadow(none);
+            height: auto;
+            position: relative;
+            z-index: 2;
+            font-size: 18px;
+            color: $secondary-color;
+        }
+        .form-control:focus {
+            label {
+                top: 0;
+            }
+        }
+    }
+    .square-button {
+        background-color: rgba(white, .8);
+        color: darken($primary-color, 10%);
+        font-size: 26px;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+        @include border-radius(2px);
+        @include transition(all 0.3s ease);
+        padding: 0 60px;
+        height: 60px;
+        border: none;
+        width: 100%;
+        &:hover,
+        &:focus {
+            background-color: white;
+        }
+    }
+}
+
+//tablet and above devices
+@media (min-width: 768px) {
+    .contact-wrap {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+//////////////////////////
+
+/*----page styles---*/
+
+//////////////////////////
+body {
+    @include background-image(linear-gradient(to right, $primary-color, #DD2476));
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-wrap {
+    padding: 15px;
+}
+
+h1 {
+    background-color: white;
+    color: lighten($primary-color, 10%);
+    padding: 40px;
+    margin: 0 0 50px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    small {
+        font-size: 18px;
+        display: block;
+        text-transform: none;
+        font-weight: 300;
+        margin-top: 10px;
+        color: lighten($primary-color, 10%);
+    }
+}
