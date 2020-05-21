@@ -1,6 +1,6 @@
 @import "compass/css3";
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     background: url(assets/leaf-splash.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -23,7 +23,6 @@ h1 {
 
 h2 {
     color: #f9ffe8;
-    font-style: italic;
     font-size: 1.5em;
     font-family: 'El Messiri', sans-serif;
     font-weight: normal;
@@ -36,7 +35,6 @@ h3 {
     font-family: 'El Messiri', sans-serif;
     margin-top: 100px;
     color: white;
-    background-image: linear-gradient(-225deg, limegreen 25%, indigo 100%);
     padding: 15px;
     border-radius: 45px;
     margin-left: auto;
@@ -46,7 +44,7 @@ h3 {
 
 h4 {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.6em;
     font-family: 'El Messiri', sans-serif;
 }
 
@@ -130,6 +128,9 @@ li.yoga {
     border-radius: 45px;
 }
 
+
+/* Gallery flex box*/
+
 .flexcontainer {
     width: 90%;
     height: auto;
@@ -146,6 +147,9 @@ li.yoga {
     border-radius: 45px;
 }
 
+
+/*Gallery image box*/
+
 .caption {
     width: 25%;
     height: auto;
@@ -158,20 +162,14 @@ li.yoga {
     margin-right: auto;
 }
 
+
+/*horizontal rule line*/
+
 .grey {
     height: 3px;
     background-color: #d8d8d8;
     border: none;
-    width: 50px;
-}
-
-.about-container {
-    background: url(assets/leaf-splash.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
+    width: 100px;
 }
 
 hr.yellow {
@@ -191,10 +189,16 @@ hr.yellow {
     color: white;
 }
 
+
+/*Responsive Gallery images */
+
 .responsive {
     width: 90%;
     height: auto;
 }
+
+
+/* Div tag clear br */
 
 .clear {
     clear: both;
@@ -249,6 +253,7 @@ hr.yellow {
 .header {
     overflow: auto;
     background-image: linear-gradient(-225deg, limegreen 25%, indigo 100%);
+    font-family: 'El Messiri', sans-serif;
 }
 
 .header a {
@@ -258,7 +263,7 @@ hr.yellow {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.3em;
 }
 
 .header a:hover {
